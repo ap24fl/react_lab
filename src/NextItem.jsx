@@ -1,6 +1,8 @@
 import React from "react";
 
-const info = [
+// fatch exerices from api
+// todo after finishinf the iteratioin send log
+var info = [
   {
     title: "Dashboard",
     content:
@@ -15,6 +17,36 @@ const info = [
     title: "Upload you look, style guide and more "
   }
 ];
+
+class TitleAddion extends React.Component {
+  handleSubmit = event => {
+    // const addTitle = (title, content) =>
+    info.push({ title: this.title, content: this.content });
+  };
+  render() {
+    return (
+      <div>
+        <p>add another title</p>
+        <form onSubmit={this.handleSubmit}>
+          <input
+            type="text"
+            name="title"
+            // onChange={this.handleChange}
+            placeholder="title"
+          />
+          <input
+            type="text"
+            name="content"
+            // onChange={this.handleChange}
+            placeholder="content"
+          />
+          <input type="submit" value="Add title" />{" "}
+        </form>
+        <p>info</p>
+      </div>
+    );
+  }
+}
 
 class Guide extends React.Component {
   constructor() {
@@ -35,6 +67,7 @@ class Guide extends React.Component {
         <h2>{item.title}</h2>
         <p>{item.content}</p>
         <button onClick={this.goToNext}>next</button>
+        <TitleAddion />
       </div>
     );
   }

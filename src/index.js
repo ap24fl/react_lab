@@ -6,6 +6,7 @@ import SimpleGet from "./SimpleGetReq";
 import SendPost from "./sendPostReq";
 import CrudApp from "./CrudExperement";
 import Guide from "./NextItem";
+import Water from "./temperatureChangeStateEx";
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(
@@ -14,8 +15,9 @@ ReactDOM.render(
     {/* <ToDoApp /> */}
     {/* <SimpleGet /> */}
     {/* <SendPost /> */}
-    {/* <CrudApp /> */}
-    <Guide />
+    <CrudApp />
+    {/* <Guide /> */}
+    {/* <Water /> */}
   </React.StrictMode>,
   rootElement
 );
