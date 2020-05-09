@@ -11,13 +11,13 @@ import Water from "./temperatureChangeStateEx";
 const rootElement = document.getElementById("root");
 ReactDOM.render(
   <React.StrictMode>
-    {/* <App /> */}
+    <App />
     {/* <ToDoApp /> */}
     {/* <SimpleGet /> */}
     {/* <SendPost /> */}
-    <CrudApp />
+    {/* <CrudApp /> */}
     {/* <Guide /> */}
-    {/* <Water /> */}
+    <Water />
   </React.StrictMode>,
   rootElement
 );
